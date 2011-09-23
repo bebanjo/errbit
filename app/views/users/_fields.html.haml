@@ -25,6 +25,10 @@
   = f.label :password_confirmation
   = f.password_field :password_confirmation
 
+%div
+  = f.label :github_username
+  = f.text_field :github_username
+
 - if current_user.admin?
   .checkbox
     = f.check_box :admin

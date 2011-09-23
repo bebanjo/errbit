@@ -5,12 +5,14 @@ class User
 
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable,
-         :validatable, :token_authenticatable
+         :validatable, :token_authenticatable,
+         :omniauthable
 
   field :email
   field :name
   field :admin, :type => Boolean, :default => false
   field :per_page, :type => Fixnum, :default => PER_PAGE
+  field :github_username
 
   after_destroy :destroy_watchers
   before_save :ensure_authentication_token

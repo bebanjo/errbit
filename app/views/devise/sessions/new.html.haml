@@ -19,6 +19,8 @@
   %div.buttons
     %button{:type => 'submit', :class => 'sign_in'}= "Sign in"
 
+  = link_to "Sign in with Github", user_omniauth_authorize_path(:github)
+
 :javascript
   $('a#forgot_password').click(function(){
     // Set email field on password reset page to email that user entered on this page
