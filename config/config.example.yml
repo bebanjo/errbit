@@ -36,6 +36,9 @@ user_has_username: false
 # but you want to leave a short comment.
 allow_comments_with_issue_tracker: true
 
+github_organizations:
+  - bebanjo
+
 # Configure SMTP settings. If you are running Errbit on Heroku,
 # sendgrid will be configured by default.
 # ------------------------------------------------------------------------

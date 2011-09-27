@@ -140,6 +140,7 @@ Devise.setup do |config|
   #   manager.default_strategies(:scope => :user).unshift :twitter_oauth
   # end
   
-  config.omniauth :github, 'cd973a773ad99b1218c8', '42485f0d5b6c3c4549a8f0f9f8d1d720903aaec7'
+  config.omniauth :github, 'cd973a773ad99b1218c8', '42485f0d5b6c3c4549a8f0f9f8d1d720903aaec7', 
+                  :client_options => {:authorize_path => '/login/oauth/authorize?scope=repo'}
 end
 
