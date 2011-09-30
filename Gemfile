@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.10'
 gem 'nokogiri'
-gem 'mongoid', '2.1.2'
+gem "mongoid", "~> 2.2"
 gem 'haml'
 gem 'will_paginate', '>=3'
 gem 'htmlentities', "~> 4.3.0"
@@ -22,7 +22,7 @@ gem 'actionmailer_inline_css', "~> 1.3.0"
 gem 'octokit'
 
 platform :ruby do
-  gem 'bson_ext', '~> 1.3.1'
+  gem 'bson_ext', '>= 1.4.0'
 end
 
 group :development, :test do
