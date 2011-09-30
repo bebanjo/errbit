@@ -8,6 +8,7 @@ if ENV['HEROKU']
   Errbit::Config.email_from = ENV['ERRBIT_EMAIL_FROM']
   Errbit::Config.email_at_notices = [1,3,10] #ENV['ERRBIT_EMAIL_AT_NOTICES']
   Errbit::Config.confirm_resolve_err = ENV['ERRBIT_CONFIRM_RESOLVE_ERR']
+  Errbit::Config.github_organizations = ENV['GITHUB_ORGANIZATIONS'].split(',').map(&:strip)
 
   Errbit::Config.smtp_settings = {
     :address        => "smtp.sendgrid.net",

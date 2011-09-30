@@ -149,6 +149,23 @@ heroku rake errbit:db:clear_resolved
   end
 ```
 
+**Configuring GitHub authentication:**
+
+  1. In `config/config.yml`, setup one or more GitHub organizations:
+  
+```ruby
+  github_organizations:
+    - foo
+    - bar
+```
+
+  2. When deploying in Heroku add the following variable to your environment, using commas
+  to separate organizations:
+
+```ruby
+  heroku config:add GITHUB_ORGANIZATIONS=foo,bar
+```
+
 Upgrading
 ---------
 *Note*: When upgrading Errbit, please run:
